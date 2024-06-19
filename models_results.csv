@@ -1,12 +1,38 @@
-Model,Accuracy,Precision,Recall,F1 Score
-Random Forest,0.962389023,0.964998364,0.959037711,0.962008805
-Multi-layer Perceptron,0.939467312,0.970517655,0.907371795,0.937883054
-Support Vector Machine,0.947861178,0.987452074,0.908012821,0.946067791
-TextCNN,0.964326069,0.97472564,0.952860858,0.963669242
-,,,,
-,,,,
-Model,Accuracy,Precision,Recall,F1 Score
-Random Forest,96.24%,96.50%,95.90%,96.20%
-Multi-layer Perceptron,93.95%,97.05%,90.74%,93.79%
-Support Vector Machine,94.79%,98.75%,90.80%,94.61%
-TextCNN,96.43%,97.47%,95.29%,96.37%
+Model type,Model,Accuracy,Precision,Recall,F1 Score,Training time,Best result of Epoch
+Traditional machine learning,Random Forest,90.07%,91.22%,88.86%,90.02%,0:00:32,
+,Multi-layer Perceptron,94.00%,97.61%,90.30%,93.81%,0:43:00,
+,Support Vector Machine,94.14%,98.32%,89.91%,93.93%,0:12:00,
+Deep learning,TextCNN,96.42%,97.38%,95.29%,96.45%,0:21:00,1
+Transfer learning,DisitiBert,82.03%,81.52%,82.87%,82.19%,1:46:59,4
+,DistilRoBerta,89.35%,92.12%,86.06%,88.99%,1:56:17,5
+,Bert-Base-Chinese,92.33%,91.67%,93.12%,92.39%,3:30:43,2
+,,,,,,,
+,,,,,,,
+,,,,,,,
+1. **Accuracy (准确率)**:,,,,,,,
+   - TextCNN 的准确率最高，达到 0.9642。,,,,,,,
+   - 其次是 Support Vector Machine，准确率为 0.9414。,,,,,,,
+   - DistilBert 的准确率最低，为 0.8203。,,,,,,,
+,,,,,,,
+2. **Precision (精确率)**:,,,,,,,
+   - Support Vector Machine 精确率最高，为 0.9832。,,,,,,,
+   - TextCNN 紧随其后，精确率为 0.9738。,,,,,,,
+   - DistilBert 的精确率最低，为 0.8152。,,,,,,,
+,,,,,,,
+3. **Recall (召回率)**:,,,,,,,
+   - TextCNN 的召回率最高，达到了 0.9529。,,,,,,,
+   - Bert-Base-Chinese 其次，为 0.9312。,,,,,,,
+   - Random Forest 的召回率最低，为 0.8886。,,,,,,,
+,,,,,,,
+4. **F1 Score**:,,,,,,,
+   - TextCNN 的 F1 Score 最高，为 0.9645。,,,,,,,
+   - Support Vector Machine 其次，为 0.9393。,,,,,,,
+   - DistilBert 的 F1 Score 最低，为 0.8219。,,,,,,,
+,,,,,,,
+5. **Training Time (训练时间)**:,,,,,,,
+   - Random Forest 训练时间最短，仅为 00:32。,,,,,,,
+   - Bert-Base-Chinese 训练时间最长，为 3:30:43。,,,,,,,
+,,,,,,,
+6. **Epoch (训练轮数)**: ,,,,,,,
+   - 多数深度学习模型的训练轮数较少，其中 TextCNN 只需要 1 轮训练便达到了较高的性能指标。,,,,,,,
+   - 转移学习模型的训练轮数较多，其中 DistilRoBerta 需要 5 轮训练转化。,,,,,,,
