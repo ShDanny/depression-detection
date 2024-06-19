@@ -10,3 +10,4 @@ addition: I used 7000 rows, the same as my benchmark, to retrain models, text CN
 6.  dataset link: https://github.com/aidenwang9867/Weibo-User-Depression-Detection-Dataset
 ![image](https://github.com/ShDanny/depression-detection/assets/125326817/d0f5268d-dc54-44de-b52c-2c1fa195e4f5)
 
+7. 20240619， retrained svm, mlp, rf, and textCnn in colab by GPU. DisitiBert, DistilRoBerta, Bert-Base-Chinese still trained by GPU
